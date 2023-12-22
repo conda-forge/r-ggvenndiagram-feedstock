@@ -26,26 +26,20 @@ requirements:
     - cross-r-base {{ r_base }}    # [build_platform != target_platform]
   host:
     - r-base
-    - r-rvenn
+    - r-aplot
     - r-dplyr
-    - r-ggplot2
-    - r-magrittr
-    - r-plotly
-    - r-purrr
-    - r-sf
+    - r-forcats
+    - r-ggplot2 >=3.4.0
     - r-tibble
-    - r-yulab.utils
+    - r-tidyr
   run:
     - r-base
-    - r-rvenn
+    - r-aplot
     - r-dplyr
-    - r-ggplot2
-    - r-magrittr
-    - r-plotly
-    - r-purrr
-    - r-sf
+    - r-forcats
+    - r-ggplot2 >=3.4.0
     - r-tibble
-    - r-yulab.utils
+    - r-tidyr
 
 test:
   commands:
