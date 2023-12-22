@@ -1,4 +1,4 @@
-{% set version = "1.2.3" %}
+{% set version = "1.4.9" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/ggVennDiagram_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/ggVennDiagram/ggVennDiagram_{{ version }}.tar.gz
-  sha256: f26c4977d868cef80a3ce80ea418130415ac4106336d4172c5638cd130c87820
+  sha256: 50f00881bfe34a6fde4d828db27aa76db432ab071eb2d363c0c1477667bec4d9
 
 build:
   merge_build_host: true  # [win]
