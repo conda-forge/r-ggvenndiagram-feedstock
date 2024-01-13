@@ -31,7 +31,8 @@ requirements:
     - r-forcats
     - r-ggplot2 >=3.4.0
     - r-tibble
-    - r-tidyr
+    - r-venn >=1.12
+    - r-yulab.utils
   run:
     - r-base
     - r-aplot
@@ -39,7 +40,8 @@ requirements:
     - r-forcats
     - r-ggplot2 >=3.4.0
     - r-tibble
-    - r-tidyr
+    - r-venn >=1.12
+    - r-yulab.utils
 
 test:
   commands:
