@@ -1,4 +1,4 @@
-{% set version = "1.4.9" %}
+{% set version = "1.5.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/ggVennDiagram_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/ggVennDiagram/ggVennDiagram_{{ version }}.tar.gz
-  sha256: 50f00881bfe34a6fde4d828db27aa76db432ab071eb2d363c0c1477667bec4d9
+  sha256: 458520bce210fab0be645fefa6f19897851b7ebdb88fc751da04f62a7eddfb59
 
 build:
   merge_build_host: true  # [win]
@@ -31,7 +31,8 @@ requirements:
     - r-forcats
     - r-ggplot2 >=3.4.0
     - r-tibble
-    - r-tidyr
+    - r-venn >=1.12
+    - r-yulab.utils
   run:
     - r-base
     - r-aplot
@@ -39,7 +40,8 @@ requirements:
     - r-forcats
     - r-ggplot2 >=3.4.0
     - r-tibble
-    - r-tidyr
+    - r-venn >=1.12
+    - r-yulab.utils
 
 test:
   commands:
